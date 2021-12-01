@@ -19,8 +19,8 @@ package renderer
 import (
 	"testing"
 
-	"github.com/elastic/crd-ref-docs/config"
-	"github.com/elastic/crd-ref-docs/types"
+	"github.com/ibakshay/crd-ref-docs/config"
+	"github.com/ibakshay/crd-ref-docs/types"
 	"github.com/stretchr/testify/require"
 )
 

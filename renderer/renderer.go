@@ -23,8 +23,8 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/elastic/crd-ref-docs/config"
-	"github.com/elastic/crd-ref-docs/types"
+	"github.com/ibakshay/crd-ref-docs/config"
+	"github.com/ibakshay/crd-ref-docs/types"
 )
 
 const mainTemplate = "gvList"

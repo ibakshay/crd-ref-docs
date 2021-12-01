@@ -1,10 +1,10 @@
 # API Reference
 
 ## Packages
-- [webapp.test.k8s.elastic.co/v1](#webapptestk8selasticcov1)
+- [webapp.test.k8s.ibakshay.co/v1](#webapptestk8selasticcov1)
 
 
-## webapp.test.k8s.elastic.co/v1
+## webapp.test.k8s.ibakshay.co/v1
 
 Package v1 contains API Schema definitions for the webapp v1 API group
 
@@ -25,7 +25,7 @@ _Appears in:_
 
 | Field | Description |
 | --- | --- |
-| `apiVersion` _string_ | `webapp.test.k8s.elastic.co/v1`
+| `apiVersion` _string_ | `webapp.test.k8s.ibakshay.co/v1`
 | `kind` _string_ | `Guestbook`
 | `metadata` _[ObjectMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta)_ | Refer to Kubernetes API documentation for fields of `metadata`. |
 | `spec` _[GuestbookSpec](#guestbookspec)_ |  |
@@ -69,7 +69,7 @@ GuestbookList contains a list of Guestbook.
 
 | Field | Description |
 | --- | --- |
-| `apiVersion` _string_ | `webapp.test.k8s.elastic.co/v1`
+| `apiVersion` _string_ | `webapp.test.k8s.ibakshay.co/v1`
 | `kind` _string_ | `GuestbookList`
 | `metadata` _[ListMeta](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#listmeta-v1-meta)_ | Refer to Kubernetes API documentation for fields of `metadata`. |
 | `items` _[Guestbook](#guestbook)_ |  |

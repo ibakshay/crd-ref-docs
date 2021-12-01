@@ -17,7 +17,7 @@
 
 // Package v1 contains API Schema definitions for the webapp v1 API group
 // +kubebuilder:object:generate=true
-// +groupName=webapp.test.k8s.elastic.co
+// +groupName=webapp.test.k8s.ibakshay.co
 package v1
 
 import (
@@ -27,7 +27,7 @@ import (
 
 var (
 	// GroupVersion is group version used to register these objects
-	GroupVersion = schema.GroupVersion{Group: "webapp.test.k8s.elastic.co", Version: "v1"}
+	GroupVersion = schema.GroupVersion{Group: "webapp.test.k8s.ibakshay.co", Version: "v1"}
 
 	// SchemeBuilder is used to add go types to the GroupVersionKind scheme
 	SchemeBuilder = &scheme.Builder{GroupVersion: GroupVersion}

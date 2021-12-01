@@ -5,49 +5,49 @@
 == API Reference
 
 .Packages
-- xref:{anchor_prefix}-webapp-test-k8s-elastic-co-v1[$$webapp.test.k8s.elastic.co/v1$$]
+- xref:{anchor_prefix}-webapp-test-k8s-ibakshay-co-v1[$$webapp.test.k8s.ibakshay.co/v1$$]
 
 
-[id="{anchor_prefix}-webapp-test-k8s-elastic-co-v1"]
-=== webapp.test.k8s.elastic.co/v1
+[id="{anchor_prefix}-webapp-test-k8s-ibakshay-co-v1"]
+=== webapp.test.k8s.ibakshay.co/v1
 
 Package v1 contains API Schema definitions for the webapp v1 API group
 
 .Resource Types
-- xref:{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbook[$$Guestbook$$]
-- xref:{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbooklist[$$GuestbookList$$]
+- xref:{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbook[$$Guestbook$$]
+- xref:{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbooklist[$$GuestbookList$$]
 
 
 
-[id="{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbook"]
+[id="{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbook"]
 ==== Guestbook 
 
 Guestbook is the Schema for the guestbooks API.
 
 .Appears In:
 ****
-- xref:{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbooklist[$$GuestbookList$$]
+- xref:{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbooklist[$$GuestbookList$$]
 ****
 
 [cols="25a,75a", options="header"]
 |===
 | Field | Description
-| *`apiVersion`* __string__ | `webapp.test.k8s.elastic.co/v1`
+| *`apiVersion`* __string__ | `webapp.test.k8s.ibakshay.co/v1`
 | *`kind`* __string__ | `Guestbook`
 | *`metadata`* __link:https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta[$$ObjectMeta$$]__ | Refer to Kubernetes API documentation for fields of `metadata`.
 
-| *`spec`* __xref:{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbookspec[$$GuestbookSpec$$]__ | 
+| *`spec`* __xref:{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbookspec[$$GuestbookSpec$$]__ | 
 |===
 
 
-[id="{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbookentry"]
+[id="{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbookentry"]
 ==== GuestbookEntry 
 
 GuestbookEntry defines an entry in a guest book.
 
 .Appears In:
 ****
-- xref:{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbookspec[$$GuestbookSpec$$]
+- xref:{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbookspec[$$GuestbookSpec$$]
 ****
 
 [cols="25a,75a", options="header"]
@@ -56,23 +56,23 @@ GuestbookEntry defines an entry in a guest book.
 | *`name`* __string__ | Name of the guest
 | *`time`* __link:https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#time-v1-meta[$$Time$$]__ | Time of entry
 | *`comment`* __string__ | Comment by guest
-| *`rating`* __xref:{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-rating[$$Rating$$]__ | Rating provided by the guest
+| *`rating`* __xref:{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-rating[$$Rating$$]__ | Rating provided by the guest
 |===
 
 
-[id="{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbookheader"]
+[id="{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbookheader"]
 ==== GuestbookHeader (string) 
 
 GuestbookHeaders are strings to include at the top of a page.
 
 .Appears In:
 ****
-- xref:{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbookspec[$$GuestbookSpec$$]
+- xref:{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbookspec[$$GuestbookSpec$$]
 ****
 
 
 
-[id="{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbooklist"]
+[id="{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbooklist"]
 ==== GuestbookList 
 
 GuestbookList contains a list of Guestbook.
@@ -82,44 +82,44 @@ GuestbookList contains a list of Guestbook.
 [cols="25a,75a", options="header"]
 |===
 | Field | Description
-| *`apiVersion`* __string__ | `webapp.test.k8s.elastic.co/v1`
+| *`apiVersion`* __string__ | `webapp.test.k8s.ibakshay.co/v1`
 | *`kind`* __string__ | `GuestbookList`
 | *`metadata`* __link:https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#listmeta-v1-meta[$$ListMeta$$]__ | Refer to Kubernetes API documentation for fields of `metadata`.
 
-| *`items`* __xref:{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbook[$$Guestbook$$]__ | 
+| *`items`* __xref:{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbook[$$Guestbook$$]__ | 
 |===
 
 
-[id="{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbookspec"]
+[id="{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbookspec"]
 ==== GuestbookSpec 
 
 GuestbookSpec defines the desired state of Guestbook.
 
 .Appears In:
 ****
-- xref:{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbook[$$Guestbook$$]
+- xref:{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbook[$$Guestbook$$]
 ****
 
 [cols="25a,75a", options="header"]
 |===
 | Field | Description
 | *`page`* __integer__ | Page indicates the page number
-| *`entries`* __xref:{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbookentry[$$GuestbookEntry$$] array__ | Entries contain guest book entries for the page
+| *`entries`* __xref:{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbookentry[$$GuestbookEntry$$] array__ | Entries contain guest book entries for the page
 | *`selector`* __link:https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#labelselector-v1-meta[$$LabelSelector$$]__ | Selector selects something
-| *`headers`* __xref:{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbookheader[$$GuestbookHeader$$] array__ | Headers contains a list of header items to include in the page
+| *`headers`* __xref:{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbookheader[$$GuestbookHeader$$] array__ | Headers contains a list of header items to include in the page
 |===
 
 
 
 
-[id="{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-rating"]
+[id="{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-rating"]
 ==== Rating (string) 
 
 Rating is the rating provided by a guest.
 
 .Appears In:
 ****
-- xref:{anchor_prefix}-github-com-elastic-crd-ref-docs-api-v1-guestbookentry[$$GuestbookEntry$$]
+- xref:{anchor_prefix}-github-com-ibakshay-crd-ref-docs-api-v1-guestbookentry[$$GuestbookEntry$$]
 ****
 
 

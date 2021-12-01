@@ -1,4 +1,4 @@
-![](https://github.com/elastic/crd-ref-docs/workflows/Build/badge.svg)
+![](https://github.com/ibakshay/crd-ref-docs/workflows/Build/badge.svg)
 
 
 CRD Reference Documentation Generator
@@ -6,7 +6,7 @@ CRD Reference Documentation Generator
 
 Generates API reference documentation by scanning a source tree for exported CRD types.
 
-This is a fresh implementation inspired by the https://github.com/ahmetb/gen-crd-api-reference-docs project. While trying to adopt the `gen-crd-api-refernce-docs` to generate documentation for [Elastic Cloud on Kubernetes](https://github.com/elastic/cloud-on-k8s), we encountered a few shortcomings such as the lack of support for Go modules, slow scan times, and rendering logic that was hard to adapt to Asciidoc (our preferred documentation markup language). This project attempts to address those issues by re-implementing the type discovery logic and decoupling the rendering logic so that different markup formats can be supported.
+This is a fresh implementation inspired by the https://github.com/ahmetb/gen-crd-api-reference-docs project. While trying to adopt the `gen-crd-api-refernce-docs` to generate documentation for [ibakshay Cloud on Kubernetes](https://github.com/ibakshay/cloud-on-k8s), we encountered a few shortcomings such as the lack of support for Go modules, slow scan times, and rendering logic that was hard to adapt to Asciidoc (our preferred documentation markup language). This project attempts to address those issues by re-implementing the type discovery logic and decoupling the rendering logic so that different markup formats can be supported.
 
 
 Usage
@@ -22,7 +22,7 @@ The tool can be invoked as follows to generate documentation:
 
 ```
 crd-ref-docs \
-    --source-path=$GOPATH/src/github.com/elastic/cloud-on-k8s/pkg/apis \
+    --source-path=$GOPATH/src/github.com/ibakshay/cloud-on-k8s/pkg/apis \
     --config=config.yaml
 ```
 
@@ -31,7 +31,7 @@ In order to generate documentation in Markdown format, you will have to specify 
 
 ```
 crd-ref-docs \
-    --source-path=$GOPATH/src/github.com/elastic/cloud-on-k8s/pkg/apis \
+    --source-path=$GOPATH/src/github.com/ibakshay/cloud-on-k8s/pkg/apis \
     --config=config.yaml \
     --renderer=markdown
 ```
@@ -41,7 +41,7 @@ You may provide your own templates by specifying the templates directory:
 
 ```
 crd-ref-docs \
-    --source-path=$GOPATH/src/github.com/elastic/cloud-on-k8s/pkg/apis \
+    --source-path=$GOPATH/src/github.com/ibakshay/cloud-on-k8s/pkg/apis \
     --config=config.yaml \
     --renderer=asciidoctor \
     --templates-dir=templates/asciidoctor

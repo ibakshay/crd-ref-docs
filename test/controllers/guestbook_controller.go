@@ -25,7 +25,7 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	webappv1 "github.com/elastic/crd-ref-docs/api/v1"
+	webappv1 "github.com/ibakshay/crd-ref-docs/api/v1"
 )
 
 // GuestbookReconciler reconciles a Guestbook object
@@ -35,8 +35,8 @@ type GuestbookReconciler struct {
 	Scheme *runtime.Scheme
 }
 
-// +kubebuilder:rbac:groups=webapp.test.k8s.elastic.co,resources=guestbooks,verbs=get;list;watch;create;update;patch;delete
-// +kubebuilder:rbac:groups=webapp.test.k8s.elastic.co,resources=guestbooks/status,verbs=get;update;patch
+// +kubebuilder:rbac:groups=webapp.test.k8s.ibakshay.co,resources=guestbooks,verbs=get;list;watch;create;update;patch;delete
+// +kubebuilder:rbac:groups=webapp.test.k8s.ibakshay.co,resources=guestbooks/status,verbs=get;update;patch
 
 func (r *GuestbookReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) {
 	_ = context.Background()
